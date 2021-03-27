@@ -45,7 +45,7 @@ def write_code_cell(code):
     return out  
 
 #export
-def py_to_nb(py_path,nb_pth):
+def py_to_nb(py_path,nb_path):
     '''Write jupyter notebooks based on py files in py_path'''
     if not os.path.exists(nb_path): os.makedirs(nb_path)
       
