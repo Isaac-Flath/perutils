@@ -1,4 +1,4 @@
-# nbdev_minimum
+# Personal Utils (perutils)
 > Notebook -> module conversion with #export flags and nothing else
 
 
@@ -12,7 +12,7 @@ That's what this module does.  it's just the #export flags from nbdev and export
 
 ## Install
 
-`pip install nbdev_minimum`
+`pip install git+https://github.com/isaac-flath/perutils`
 
 ## How to use
 
