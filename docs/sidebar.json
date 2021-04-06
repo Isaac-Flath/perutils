@@ -2,6 +2,7 @@
   "perutils": {
     "Overview": "/",
     "Notebook Utils": "nbutils.html",
-    "Tabular Utils": "tabutils.html"
+    "Tabular Utils": "tabutils.html",
+    "Tracking": "Tracking.html"
   }
 }

@@ -16,6 +16,74 @@ That's what this module does.  it's just the #export flags from nbdev and export
 
 ## How to use
 
+### Shelve Experiment Tracking
+
+This module is designed to assist me in tracking experiments when I am working on data science and machine learning tasks, though is flexible enough to track most things.  This allows for easy tracking and plotting of many different types of information and datatypes without requiring a consistent schema so you can add new things without adjusting your dataframe or table.
+
+General access to a shelve db can be reached in one of two ways and behaves similar to a dictionary.
+
+```python
+with shelve.open('test.shelve') as d: 
+    print(d['exp'])
+
+d = shelve.open('test.shelve')
+print(d['exp']
+d.close()
+```
+
+This module assumes a certain structure.  If we assume: `d = shelve.open('test.shelve')`
+
+```python
+assert type(d[key]) == list
+assert type(d[key][0]) == dict
+```
+
+Additionally:
++ keys in an experiment (`d['exp'][0][key]` must be strings but the values can be anything that can be pickled
++ Plotting functions assumes the value you want to plot (ie `d['exp][0]['batch_loss']` is list like and the name (for the legend) is a string
+
+
+#### Create and Add Data
+
+The process is:
+1. Create a dict with all the information
+2. Append dict to database
+
+This will create `filename` if it does not exist
+
+```python
+append(filename,new_dict)```
+{% include note.html content='You can write individual elements at a time as well just like you would in a normal dictionary if that is preferred.' %}
+#### Delete
+
+`-1` can be replaced with any index location.
+```python
+delete(filename,-1)```
+
+#### What keys are available?
+
+```python
+print_keys(filename)```
+
+#### What were the results?
+
+```python
+el,ea,bl = get_stats(filename,-1,['epoch_loss','epoch_accuracy','batch_loss'],display=True)
+```
+
+#### Find the experiment with the best results.
+
+```python
+print_best(filename,'epoch_loss',best='min')
+print_best(filename,'epoch_accuracy',best='max')
+```
+
+#### Graph some stats and compare results
+
+```python
+graph_stats(filename,['batch_loss','epoch_accuracy'],idxs=[-1,-2,-3])
+```
+
 ### nb -> py
 
 #### Full Directory Conversion

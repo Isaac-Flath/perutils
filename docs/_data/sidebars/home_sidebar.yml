@@ -15,6 +15,9 @@ entries:
     - output: web,pdf
       title: Tabular Utils
       url: tabutils.html
+    - output: web,pdf
+      title: Tracking
+      url: Tracking.html
     output: web
     title: perutils
   output: web

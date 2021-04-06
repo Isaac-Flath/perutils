@@ -16,7 +16,16 @@ index = {"get_py_files": "01_nbutils.ipynb",
          "rf_feat_importance": "02_tabutils.ipynb",
          "plot_fi": "02_tabutils.ipynb",
          "TabularPandas.export": "02_tabutils.ipynb",
-         "load_pandas": "02_tabutils.ipynb"}
+         "load_pandas": "02_tabutils.ipynb",
+         "create": "03_Tracking.ipynb",
+         "append": "03_Tracking.ipynb",
+         "delete": "03_Tracking.ipynb",
+         "print_keys": "03_Tracking.ipynb",
+         "get_stat": "03_Tracking.ipynb",
+         "get_stats": "03_Tracking.ipynb",
+         "print_best": "03_Tracking.ipynb",
+         "graph_stat": "03_Tracking.ipynb",
+         "graph_stats": "03_Tracking.ipynb"}
 
 modules = ["nbutils.py",
            "tabutils.py"]
