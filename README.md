@@ -42,7 +42,6 @@ Additionally:
 + keys in an experiment (`d['exp'][0][key]` must be strings but the values can be anything that can be pickled
 + Plotting functions assumes the value you want to plot (ie `d['exp][0]['batch_loss']` is list like and the name (for the legend) is a string
 
-
 #### Create and Add Data
 
 The process is:
@@ -52,18 +51,23 @@ The process is:
 This will create `filename` if it does not exist
 
 ```python
-append(filename,new_dict)```
+append(filename,new_dict)
+```
 {% include note.html content='You can write individual elements at a time as well just like you would in a normal dictionary if that is preferred.' %}
+
 #### Delete
 
 `-1` can be replaced with any index location.
+
 ```python
-delete(filename,-1)```
+delete(filename,-1)
+```
 
 #### What keys are available?
 
 ```python
-print_keys(filename)```
+print_keys(filename)
+```
 
 #### What were the results?
 
