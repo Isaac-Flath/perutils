@@ -85,7 +85,7 @@ nb_path: "03_Tracking.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="create" class="doc_header"><code>create</code><a href="https://github.com/Isaac.Flath@gmail.com/perutils/tree/{branch}/perutils/nbutils.py#L124" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>create</code>(<strong><code>filename</code></strong>, <strong><code>keys</code></strong>)</p>
+<h4 id="create" class="doc_header"><code>create</code><a href="https://github.com/Isaac.Flath@gmail.com/perutils/tree/{branch}/perutils/tracking.py#L14" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>create</code>(<strong><code>filename</code></strong>, <strong><code>keys</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -116,7 +116,7 @@ nb_path: "03_Tracking.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="append" class="doc_header"><code>append</code><a href="https://github.com/Isaac.Flath@gmail.com/perutils/tree/{branch}/perutils/nbutils.py#L131" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>append</code>(<strong><code>filename</code></strong>, <strong><code>new_dict</code></strong>, <strong><code>key</code></strong>=<em><code>'exp'</code></em>)</p>
+<h4 id="append" class="doc_header"><code>append</code><a href="https://github.com/Isaac.Flath@gmail.com/perutils/tree/{branch}/perutils/tracking.py#L21" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>append</code>(<strong><code>filename</code></strong>, <strong><code>new_dict</code></strong>, <strong><code>key</code></strong>=<em><code>'exp'</code></em>)</p>
 </blockquote>
 <p>Append a new_dict to list store in key - create db if needed</p>
 
@@ -169,7 +169,7 @@ nb_path: "03_Tracking.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="delete" class="doc_header"><code>delete</code><a href="https://github.com/Isaac.Flath@gmail.com/perutils/tree/{branch}/perutils/nbutils.py#L141" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>delete</code>(<strong><code>filename</code></strong>, <strong><code>exp_num</code></strong>, <strong><code>key</code></strong>=<em><code>'exp'</code></em>)</p>
+<h4 id="delete" class="doc_header"><code>delete</code><a href="https://github.com/Isaac.Flath@gmail.com/perutils/tree/{branch}/perutils/tracking.py#L31" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>delete</code>(<strong><code>filename</code></strong>, <strong><code>exp_num</code></strong>, <strong><code>key</code></strong>=<em><code>'exp'</code></em>)</p>
 </blockquote>
 <p>delete an item from list stored in key</p>
 
@@ -207,7 +207,7 @@ nb_path: "03_Tracking.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="print_keys" class="doc_header"><code>print_keys</code><a href="https://github.com/Isaac.Flath@gmail.com/perutils/tree/{branch}/perutils/nbutils.py#L153" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>print_keys</code>(<strong><code>filename</code></strong>, <strong><code>last_only</code></strong>=<em><code>True</code></em>, <strong><code>with_type</code></strong>=<em><code>False</code></em>, <strong><code>key</code></strong>=<em><code>'exp'</code></em>)</p>
+<h4 id="print_keys" class="doc_header"><code>print_keys</code><a href="https://github.com/Isaac.Flath@gmail.com/perutils/tree/{branch}/perutils/tracking.py#L43" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>print_keys</code>(<strong><code>filename</code></strong>, <strong><code>last_only</code></strong>=<em><code>True</code></em>, <strong><code>with_type</code></strong>=<em><code>False</code></em>, <strong><code>key</code></strong>=<em><code>'exp'</code></em>)</p>
 </blockquote>
 
 </div>
@@ -273,7 +273,7 @@ nb_path: "03_Tracking.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_stat" class="doc_header"><code>get_stat</code><a href="https://github.com/Isaac.Flath@gmail.com/perutils/tree/{branch}/perutils/nbutils.py#L168" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_stat</code>(<strong><code>filename</code></strong>, <strong><code>exp_num</code></strong>, <strong><code>stat</code></strong>, <strong><code>key</code></strong>=<em><code>'exp'</code></em>, <strong><code>display</code></strong>=<em><code>True</code></em>)</p>
+<h4 id="get_stat" class="doc_header"><code>get_stat</code><a href="https://github.com/Isaac.Flath@gmail.com/perutils/tree/{branch}/perutils/tracking.py#L58" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_stat</code>(<strong><code>filename</code></strong>, <strong><code>exp_num</code></strong>, <strong><code>stat</code></strong>, <strong><code>key</code></strong>=<em><code>'exp'</code></em>, <strong><code>display</code></strong>=<em><code>True</code></em>)</p>
 </blockquote>
 <p>get a specific stat (ie loss) from key for a given expirament
 Goes well with partial</p>
@@ -338,7 +338,7 @@ Goes well with partial</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_stats" class="doc_header"><code>get_stats</code><a href="https://github.com/Isaac.Flath@gmail.com/perutils/tree/{branch}/perutils/nbutils.py#L177" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_stats</code>(<strong><code>filename</code></strong>, <strong><code>exp_num</code></strong>, <strong><code>stats</code></strong>, <strong><code>key</code></strong>=<em><code>'exp'</code></em>, <strong><code>display</code></strong>=<em><code>True</code></em>)</p>
+<h4 id="get_stats" class="doc_header"><code>get_stats</code><a href="https://github.com/Isaac.Flath@gmail.com/perutils/tree/{branch}/perutils/tracking.py#L67" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_stats</code>(<strong><code>filename</code></strong>, <strong><code>exp_num</code></strong>, <strong><code>stats</code></strong>, <strong><code>key</code></strong>=<em><code>'exp'</code></em>, <strong><code>display</code></strong>=<em><code>True</code></em>)</p>
 </blockquote>
 
 </div>
@@ -405,7 +405,7 @@ d[exp][-1][batch_loss]: [9.0, 7.0, 5.1, 3.5, 2.2, 1.5]
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="print_best" class="doc_header"><code>print_best</code><a href="https://github.com/Isaac.Flath@gmail.com/perutils/tree/{branch}/perutils/nbutils.py#L181" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>print_best</code>(<strong><code>filename</code></strong>, <strong><code>stat</code></strong>, <strong><code>best</code></strong>=<em><code>'min'</code></em>, <strong><code>key</code></strong>=<em><code>'exp'</code></em>)</p>
+<h4 id="print_best" class="doc_header"><code>print_best</code><a href="https://github.com/Isaac.Flath@gmail.com/perutils/tree/{branch}/perutils/tracking.py#L71" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>print_best</code>(<strong><code>filename</code></strong>, <strong><code>stat</code></strong>, <strong><code>best</code></strong>=<em><code>'min'</code></em>, <strong><code>key</code></strong>=<em><code>'exp'</code></em>)</p>
 </blockquote>
 
 </div>
@@ -475,7 +475,7 @@ epoch_accuracy max value = 0.99 | best idx = -1
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="graph_stat" class="doc_header"><code>graph_stat</code><a href="https://github.com/Isaac.Flath@gmail.com/perutils/tree/{branch}/perutils/nbutils.py#L197" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>graph_stat</code>(<strong><code>filename</code></strong>, <strong><code>stat</code></strong>, <strong><code>idxs</code></strong>=<em><code>[-1, -2, -3]</code></em>, <strong><code>key</code></strong>=<em><code>'exp'</code></em>, <strong><code>name</code></strong>=<em><code>'name'</code></em>, <strong><code>figsize</code></strong>=<em><code>(12, 6)</code></em>)</p>
+<h4 id="graph_stat" class="doc_header"><code>graph_stat</code><a href="https://github.com/Isaac.Flath@gmail.com/perutils/tree/{branch}/perutils/tracking.py#L87" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>graph_stat</code>(<strong><code>filename</code></strong>, <strong><code>stat</code></strong>, <strong><code>idxs</code></strong>=<em><code>[-1, -2, -3]</code></em>, <strong><code>key</code></strong>=<em><code>'exp'</code></em>, <strong><code>name</code></strong>=<em><code>'name'</code></em>, <strong><code>figsize</code></strong>=<em><code>(12, 6)</code></em>)</p>
 </blockquote>
 
 </div>
@@ -499,7 +499,7 @@ epoch_accuracy max value = 0.99 | best idx = -1
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="graph_stats" class="doc_header"><code>graph_stats</code><a href="https://github.com/Isaac.Flath@gmail.com/perutils/tree/{branch}/perutils/nbutils.py#L208" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>graph_stats</code>(<strong><code>filename</code></strong>, <strong><code>stats</code></strong>, <strong><code>idxs</code></strong>=<em><code>[-1, -2, -3]</code></em>, <strong><code>key</code></strong>=<em><code>'exp'</code></em>, <strong><code>name</code></strong>=<em><code>'name'</code></em>, <strong><code>figsize</code></strong>=<em><code>(12, 6)</code></em>)</p>
+<h4 id="graph_stats" class="doc_header"><code>graph_stats</code><a href="https://github.com/Isaac.Flath@gmail.com/perutils/tree/{branch}/perutils/tracking.py#L98" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>graph_stats</code>(<strong><code>filename</code></strong>, <strong><code>stats</code></strong>, <strong><code>idxs</code></strong>=<em><code>[-1, -2, -3]</code></em>, <strong><code>key</code></strong>=<em><code>'exp'</code></em>, <strong><code>name</code></strong>=<em><code>'name'</code></em>, <strong><code>figsize</code></strong>=<em><code>(12, 6)</code></em>)</p>
 </blockquote>
 
 </div>

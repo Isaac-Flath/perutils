@@ -28,7 +28,8 @@ index = {"get_py_files": "01_nbutils.ipynb",
          "graph_stats": "03_Tracking.ipynb"}
 
 modules = ["nbutils.py",
-           "tabutils.py"]
+           "tabutils.py",
+           "tracking.py"]
 
 doc_url = "https://Isaac.Flath@gmail.com.github.io/perutils/"
 
