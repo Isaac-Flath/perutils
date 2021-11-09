@@ -12,7 +12,7 @@ That's what this module does.  it's just the #export flags from nbdev and export
 
 ## Install
 
-`pip install git+https://github.com/isaac-flath/perutils`
+`pip install perutils`
 
 ## How to use
 
