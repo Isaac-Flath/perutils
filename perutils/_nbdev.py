@@ -25,11 +25,19 @@ index = {"get_py_files": "01_nbutils.ipynb",
          "get_stats": "03_Tracking.ipynb",
          "print_best": "03_Tracking.ipynb",
          "graph_stat": "03_Tracking.ipynb",
-         "graph_stats": "03_Tracking.ipynb"}
+         "graph_stats": "03_Tracking.ipynb",
+         "run_bash": "04_kaggle.ipynb",
+         "update_datset": "04_kaggle.ipynb",
+         "create_dataset": "04_kaggle.ipynb",
+         "download_dataset_metadata": "04_kaggle.ipynb",
+         "download_dataset_content": "04_kaggle.ipynb",
+         "download_dataset": "04_kaggle.ipynb",
+         "add_library_to_dataset": "04_kaggle.ipynb"}
 
 modules = ["nbutils.py",
            "tabutils.py",
-           "tracking.py"]
+           "tracking.py",
+           "kaggle.py"]
 
 doc_url = "https://Isaac.Flath@gmail.com.github.io/perutils/"
 
