@@ -127,3 +127,34 @@ In python run the `py_to_nb` function.  This will:
 
 ```python
 py_to_nb(py_path=Path('./src/'),nb_pth=Path('.')```
+
+### kaggle dataset
+
+#### Uploading Libraries
+
+```python
+if __name__ == '__main__':
+    libraries = ['huggingface','timm','torch','torchvision','opencv-python','albumentations','fastcore']
+
+    for library in libraries: 
+        print(f'starting {library}')
+        dataset_path = Path(library)
+        print("downloading dataset...")
+        download_dataset(dataset_path,f'isaacflath/library{library}',f'library{library}',content=False,unzip=True)
+        print("adding library...")
+        add_library_to_dataset(library,dataset_path)
+        print("updating dataset...")
+        update_datset(dataset_path,"UpdateLibrary")
+
+        print('+'*30)
+```
+
+#### Custom dataset (ie model weights)
+
+```python
+dataset_path = Path(library)
+dataset_name = testdataset
+download_dataset(dataset_path,f'isaacflath/{dataset_name}',f'{dataset_name}',content=False,unzip=True)
+# add files (ie model weights to folder
+update_datset(dataset_path,"UpdateLibrary")
+```

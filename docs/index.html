@@ -189,6 +189,45 @@ nb_path: "index.ipynb"
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="kaggle-dataset">kaggle dataset<a class="anchor-link" href="#kaggle-dataset"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Uploading-Libraries">Uploading Libraries<a class="anchor-link" href="#Uploading-Libraries"> </a></h4><div class="highlight"><pre><span></span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">libraries</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;huggingface&#39;</span><span class="p">,</span><span class="s1">&#39;timm&#39;</span><span class="p">,</span><span class="s1">&#39;torch&#39;</span><span class="p">,</span><span class="s1">&#39;torchvision&#39;</span><span class="p">,</span><span class="s1">&#39;opencv-python&#39;</span><span class="p">,</span><span class="s1">&#39;albumentations&#39;</span><span class="p">,</span><span class="s1">&#39;fastcore&#39;</span><span class="p">]</span>
+
+    <span class="k">for</span> <span class="n">library</span> <span class="ow">in</span> <span class="n">libraries</span><span class="p">:</span> 
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;starting </span><span class="si">{</span><span class="n">library</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">dataset_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">library</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;downloading dataset...&quot;</span><span class="p">)</span>
+        <span class="n">download_dataset</span><span class="p">(</span><span class="n">dataset_path</span><span class="p">,</span><span class="sa">f</span><span class="s1">&#39;isaacflath/library</span><span class="si">{</span><span class="n">library</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span><span class="sa">f</span><span class="s1">&#39;library</span><span class="si">{</span><span class="n">library</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">content</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">unzip</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;adding library...&quot;</span><span class="p">)</span>
+        <span class="n">add_library_to_dataset</span><span class="p">(</span><span class="n">library</span><span class="p">,</span><span class="n">dataset_path</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;updating dataset...&quot;</span><span class="p">)</span>
+        <span class="n">update_datset</span><span class="p">(</span><span class="n">dataset_path</span><span class="p">,</span><span class="s2">&quot;UpdateLibrary&quot;</span><span class="p">)</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;+&#39;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Custom-dataset-(ie-model-weights)">Custom dataset (ie model weights)<a class="anchor-link" href="#Custom-dataset-(ie-model-weights)"> </a></h4><div class="highlight"><pre><span></span><span class="n">dataset_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">library</span><span class="p">)</span>
+<span class="n">dataset_name</span> <span class="o">=</span> <span class="n">testdataset</span>
+<span class="n">download_dataset</span><span class="p">(</span><span class="n">dataset_path</span><span class="p">,</span><span class="sa">f</span><span class="s1">&#39;isaacflath/</span><span class="si">{</span><span class="n">dataset_name</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">dataset_name</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">content</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span><span class="n">unzip</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="c1"># add files (ie model weights to folder</span>
+<span class="n">update_datset</span><span class="p">(</span><span class="n">dataset_path</span><span class="p">,</span><span class="s2">&quot;UpdateLibrary&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
 </div>
  
 

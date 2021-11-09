@@ -18,6 +18,9 @@ entries:
     - output: web,pdf
       title: Tracking
       url: Tracking.html
+    - output: web,pdf
+      title: Title
+      url: kaggle.html
     output: web
     title: perutils
   output: web
