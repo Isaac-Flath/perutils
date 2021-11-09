@@ -1,0 +1,36 @@
+package:
+  name: perutils
+  version: 0.0.1
+source:
+  sha256: cd217f479b471b58a9db5edafe0779072cfce3c269aedb87ed39d87535d31b41
+  url: https://files.pythonhosted.org/packages/8a/91/e19d0b9735d22684c92200326a331c5bd7d0ff457b6aeb14f607827ba7b1/perutils-0.0.1.tar.gz
+about:
+  dev_url: https://Isaac.Flath@gmail.com.github.io
+  doc_url: https://Isaac.Flath@gmail.com.github.io
+  home: https://Isaac.Flath@gmail.com.github.io
+  license: Apache Software
+  license_family: APACHE
+  summary: Isaacs personal utils
+build:
+  noarch: python
+  number: '0'
+  script: '{{ PYTHON }} -m pip install . -vv'
+extra:
+  recipe-maintainers:
+  - Isaac.Flath@gmail.com
+requirements:
+  host:
+  - pip
+  - python
+  - packaging
+  - pandas
+  - fastai
+  run:
+  - pip
+  - python
+  - packaging
+  - pandas
+  - fastai
+test:
+  imports:
+  - perutils
