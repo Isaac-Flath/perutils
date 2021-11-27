@@ -32,12 +32,15 @@ index = {"get_py_files": "01_nbutils.ipynb",
          "download_dataset_metadata": "04_kaggle.ipynb",
          "download_dataset_content": "04_kaggle.ipynb",
          "download_dataset": "04_kaggle.ipynb",
-         "add_library_to_dataset": "04_kaggle.ipynb"}
+         "add_library_to_dataset": "04_kaggle.ipynb",
+         "bin_df": "05_splitting.ipynb",
+         "kfold_Stratified_df": "05_splitting.ipynb"}
 
 modules = ["nbutils.py",
            "tabutils.py",
            "tracking.py",
-           "kaggle.py"]
+           "kaggle.py",
+           "splitting.py"]
 
 doc_url = "https://Isaac.Flath@gmail.com.github.io/perutils/"
 

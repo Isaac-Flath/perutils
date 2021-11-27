@@ -4,6 +4,7 @@
     "Notebook Utils": "nbutils.html",
     "Tabular Utils": "tabutils.html",
     "Tracking": "Tracking.html",
-    "Kaggle": "kaggle.html"
+    "Kaggle": "kaggle.html",
+    "Splitting": "splitting.html"
   }
 }

@@ -378,7 +378,11 @@ All .py files in lib_path will be removed and replaced</p>
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Converted test_example/nbutils.py
+<pre>Converted test_example/kaggle.py
+Converted test_example/tabutils.py
+Converted test_example/nbutils.py
+Converted test_example/Tracking.py
+Converted test_example/splitting.py
 Nothing to Convert test_example/index.ipynb
 </pre>
 </div>
@@ -437,7 +441,7 @@ Nothing to Convert test_example/index.ipynb
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">clear_cell_outputs</span><span class="p">(</span><span class="n">nb_path</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;Read nb in nb_path, clear cell outputs, overwrite it with new nb&#39;&#39;&#39;</span>
     <span class="n">nb</span> <span class="o">=</span> <span class="n">read_nb</span><span class="p">(</span><span class="n">nb_path</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="s1">&#39;cells&#39;</span><span class="p">])):</span> <span class="n">a</span><span class="p">[</span><span class="s1">&#39;cells&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">][</span><span class="s1">&#39;outputs&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nb</span><span class="p">[</span><span class="s1">&#39;cells&#39;</span><span class="p">])):</span> <span class="n">nb</span><span class="p">[</span><span class="s1">&#39;cells&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">][</span><span class="s1">&#39;outputs&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">nb_path</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span> <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">nb</span><span class="p">))</span>
 </pre></div>
 
