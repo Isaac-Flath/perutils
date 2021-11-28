@@ -1,9 +1,9 @@
 package:
   name: perutils
-  version: 0.0.20
+  version: 0.0.21
 source:
-  sha256: 35c06a63ff7b0f0ae3a97ea8558a529857c89144c6eb4162d50cb554a7458ff4
-  url: https://files.pythonhosted.org/packages/b6/12/76967d47e51ad92177f37619c89eb68db29921e390a2f104208ecb94b76f/perutils-0.0.20.tar.gz
+  sha256: d85403b55b4580cf2faf190414b1e77c55c2967a6c551bb6c695710a4bb29fdf
+  url: https://files.pythonhosted.org/packages/39/d9/296e0a6c952268a2cc26e4b3a20d8cf5c40f0796a2ab77cd5ba1694cc771/perutils-0.0.21.tar.gz
 about:
   dev_url: https://Isaac.Flath@gmail.com.github.io
   doc_url: https://Isaac.Flath@gmail.com.github.io
