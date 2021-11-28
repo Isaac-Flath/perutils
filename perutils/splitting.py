@@ -9,6 +9,11 @@ from sklearn.model_selection import StratifiedKFold
 
 # Cell
 def bin_df(df,col,bin_sz):
+    if not (df[col].max() - df[col].min()) % bin_sz == 0:
+        for new_sz in range(bin_sz,df[col].max()):
+            if (df[col].max() - df[col].min()) % new_sz == 0:
+                print(f'bin sizes not right - next largest size is {new_sz}')
+                assert (df[col].max() - df[col].min()) % bin_sz == 0
     for i in range(df[col].min(),df[col].max()+bin_sz,bin_sz):
         bin_min = i - (bin_sz-1)
         bin_max = i
