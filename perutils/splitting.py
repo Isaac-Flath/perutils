@@ -9,12 +9,13 @@ from sklearn.model_selection import StratifiedKFold
 
 # Cell
 def bin_df(df,col,bin_sz):
-    if not (df[col].max() - df[col].min()) % bin_sz == 0:
+    col_range = (df[col].max() - df[col].min() + 1)
+    if not col_range % bin_sz == 0:
         for new_sz in range(bin_sz,df[col].max()):
-            if (df[col].max() - df[col].min()) % new_sz == 0:
+            if col_range % new_sz == 0:
                 print(f'bin sizes not right - next largest size is {new_sz}')
-                assert (df[col].max() - df[col].min()) % bin_sz == 0
-    for i in range(df[col].min(),df[col].max()+bin_sz,bin_sz):
+                assert col_range % bin_sz == 0
+    for i in range(df[col].min(),df[col].max(),bin_sz):
         bin_min = i
         bin_max = i + bin_sz - 1
         mask = (df[col] >= bin_min) & (df[col] <= bin_max)
@@ -22,8 +23,8 @@ def bin_df(df,col,bin_sz):
     return df
 
 # Cell
-def kfold_Stratified_df(df,col,folds):
-    skf = StratifiedKFold(n_splits=folds)
+def kfold_Stratified_df(df,col,folds,shuffle=True):
+    skf = StratifiedKFold(n_splits=folds,shuffle=shuffle)
     col_name = f'{folds}fold_{col}'
     f_num = 0
     for train_idxs, valid_idxs in skf.split(df.index,df[col]):
